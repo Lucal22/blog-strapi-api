@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  blog_strapi_api:
+    container_name: blog-strapi-api
+    hostname: blog-strapi-api
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: senha1
+      POSTGRES_DB: so-today-db
+      PGDATA: /var/lib/postgressql/data/pgdata
+    volumes:
+      - D:/Desktop/Codes/db/so-today-db:/var/lib/postgressql/data/pgdata
+    ports:
+      - "5432:5432"
