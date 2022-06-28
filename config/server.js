@@ -4,4 +4,7 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  auth: {
+    secret: env('ADMIN_JWT_SECRET', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+  },
 });
