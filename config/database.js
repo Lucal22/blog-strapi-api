@@ -12,8 +12,5 @@ module.exports = ({ env }) => ({
       },
     },
     debug: false,
-    options: {
-      ssl: env.bool('DATABASE_SSL', false),
-    },
   },
 });
