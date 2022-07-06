@@ -1,6 +1,7 @@
 module.exports = ({ env }) => ({
   // ...
   upload: {
+    config: {
       provider: 'cloudinary',
       providerOptions: {
         cloud_name: env('CLOUDINARY_NAME'),
@@ -9,9 +10,10 @@ module.exports = ({ env }) => ({
       },
       actionOptions: {
         upload: {},
+        uploadStream: {},
         delete: {},
       },
     },
-
+  },
   // ...
 });
