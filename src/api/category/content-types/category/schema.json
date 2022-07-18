@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "categories"
+    "displayName": "categories",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,18 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "category"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
