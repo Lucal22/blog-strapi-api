@@ -15,16 +15,5 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  graphql: {
-    enabled: true,
-    config: {
-       shadowCRUD: true,
-       playgroundAlways: true,
-       depthLimit: 100,
-       apolloServer: {
-         tracing: false,
-         },
-       },
-    },
   // ...
 });
