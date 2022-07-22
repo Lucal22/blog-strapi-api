@@ -22,7 +22,7 @@
       "target": "api::post.post",
       "mappedBy": "category"
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -30,7 +30,7 @@
         "images"
       ]
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
       "targetField": "name"
     }
